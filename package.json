@@ -1,0 +1,33 @@
+{
+	"name": "block-theme",
+	"version": "0.0.2",
+	"description": "A starter theme for modern WordPress developers.",
+	"author": "BlockTheme Contributors",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"wordpress",
+		"starter",
+		"theme"
+	],
+	"homepage": "https://github.com/bacoords/block-theme#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bacoords/block-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/bacoords/block-theme/issues"
+	},
+	"main": "index.js",
+	"devDependencies": {
+		"@wordpress/prettier-config": "^3.12.0",
+		"@wordpress/scripts": "^27.6.0",
+		"glob": "^8.1.0",
+		"remove-files-webpack-plugin": "^1.5.0"
+	},
+	"scripts": {
+		"build": "wp-scripts build --config ./bin/webpack.config.js --webpack-src-dir=src/blocks",
+		"create-block": "cd ./src/blocks && npx @wordpress/create-block --namespace=block-theme --no-plugin",
+		"create-block:dynamic": "cd ./src/blocks && npx @wordpress/create-block --namespace=block-theme --no-plugin --variant=dynamic",
+		"start": "wp-scripts start --config ./bin/webpack.config.js --webpack-src-dir=src/blocks"
+	}
+}

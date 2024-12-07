@@ -1,0 +1,10 @@
+@use '../../utils' as utils;
+
+.wp-site-blocks {
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include utils.absolutebox();
+  overflow: hidden;
+}

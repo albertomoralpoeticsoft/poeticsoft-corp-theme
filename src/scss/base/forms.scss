@@ -1,0 +1,16 @@
+// This is an example of how you can style forms using CSS variables from theme.json.
+
+input[type="submit"] {
+	appearance: none;
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0px;
+	border-color: var(--wp--preset--color--background);
+	border-style: solid;
+	border-width: 2px;
+	color: var(--wp--preset--color--background);
+	padding-top: var(--wp--preset--spacing--20);
+	padding-right: var(--wp--preset--spacing--50);
+	padding-bottom: var(--wp--preset--spacing--20);
+	padding-left: var(--wp--preset--spacing--50);
+	text-decoration: none;
+}

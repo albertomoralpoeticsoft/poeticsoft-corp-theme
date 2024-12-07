@@ -1,0 +1,266 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "Background",
+          "slug": "background",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "Foreground",
+          "slug": "foreground",
+          "color": "#401F1F"
+        },
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#FFA644"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#f3e0cb"
+        },
+        {
+          "name": "Tertiary",
+          "slug": "tertiary",
+          "color": "#f3e0cbcf"
+        },
+        {
+          "name": "Headers",
+          "slug": "headers",
+          "color": "#000000"
+        },
+        {
+          "name": "Transparent",
+          "slug": "transparent",
+          "color": "#FFFFFF00"
+        }
+      ]
+    },
+    "custom": {
+      "blockGap": "1.5rem"
+    },
+    "layout": {
+      "contentSize": "650px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "customSpacingSize": false,
+			"margin": true,
+			"padding": true,
+			"spacingScale": {
+				"operator": "+",
+				"increment": 8,
+				"steps": 7,
+				"mediumStep": 0,
+				"unit": "%"
+			}
+    },
+    "typography": {
+      "customFontSize": false,
+      "dropCap": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Montserrat",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./fonts/montserrat/Montserrat-SemiBold.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "\"Montserrat\", sans-serif",
+          "name": "Montserrat",
+          "slug": "montserrat"
+        }
+      ],
+      "fontSizes": [
+        {
+          "fluid": {
+            "min": "0.8rem",
+            "max": "1.5rem"
+          },
+          "size": "0.8rem",
+          "slug": "normal",
+          "name": "Normal"
+        }
+      ]
+    },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|background",
+      "text": "var:preset|color|foreground"
+    },
+    "elements": {
+      "button": {
+        "border": {
+          "radius": "0px",
+          "color": "var:preset|color|background",
+          "width": "2px"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|20",
+            "right": "var:preset|spacing|50",
+            "bottom": "var:preset|spacing|20",
+            "left": "var:preset|spacing|50"
+          }
+        },
+        "color": {
+          "background": "var:preset|color|primary",
+          "text": "var:preset|color|background"
+        },
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|secondary",
+            "text": "var:preset|color|background"
+          }
+        },
+        ":focus": {
+          "color": {
+            "background": "var:preset|color|secondary",
+            "text": "var:preset|color|background"
+          },
+          "border": {
+            "color": "var:preset|color|background"
+          }
+        },
+        ":active": {
+          "color": {
+            "background": "var:preset|color|background",
+            "text": "var:preset|color|secondary"
+          }
+        },
+        ":visited": {
+          "color": {
+            "text": "var:preset|color|background"
+          }
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "var:preset|font-size|normal"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|montserrat",
+          "fontWeight": "300",
+          "lineHeight": "1.2"
+        }
+      },
+      "link": {
+        ":hover": {
+          "color": {
+            "text": "var:preset|color|foreground"
+          },
+          "typography": {
+            "textDecoration": "underline var(--wp--preset--color--foreground)"
+          }
+        },
+        ":focus": {
+          "typography": {
+            "textDecoration": "underline dashed"
+          }
+        },
+        ":active": {
+          "color": {
+            "text": "var:preset|color|foreground"
+          },
+          "typography": {
+            "textDecoration": "none"
+          }
+        },
+        "color": {
+          "text": "var:preset|color|primary"
+        },
+        "typography": {
+          "textDecoration": "underline var(--wp--preset--color--primary)"
+        }
+      }
+    },
+    "spacing": {
+      "blockGap": "var:custom|block-gap",
+      "margin": {
+        "top": "var:preset|spacing|0",
+        "right": "var:preset|spacing|0",
+        "bottom": "var:preset|spacing|0",
+        "left": "var:preset|spacing|0"
+      },
+      "padding": {
+        "top": "var:preset|spacing|0",
+        "right": "var:preset|spacing|0",
+        "bottom": "var:preset|spacing|0",
+        "left": "var:preset|spacing|0"
+      }
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|montserrat",
+      "fontSize": "var:preset|font-size|normal",
+      "lineHeight": "1"
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer Credit Area",
+      "area": "footer"
+    },
+    {
+      "name": "comments",
+      "title": "Comments",
+      "area": "uncategorized"
+    },
+    {
+      "name": "post-meta",
+      "title": "Post Meta",
+      "area": "uncategorized"
+    }
+  ],
+  "version": 2
+}

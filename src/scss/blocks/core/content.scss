@@ -1,0 +1,7 @@
+@use '../../utils' as utils;
+
+.wp-block-post-content {
+
+  @include utils.absolutebox(); 
+  overflow: hidden;
+}
